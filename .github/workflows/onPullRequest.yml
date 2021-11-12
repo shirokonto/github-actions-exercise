@@ -47,7 +47,7 @@ jobs:
           image-tag: ${{ env.SHORT_SHA }}
 
       - name: Comment PR
-        uses: thollander/actions-comment-pull-request@master
+        uses: thollander/actions-comment-pull-request@main
         with:
           message: "successfully build image:  docker.pkg.github.com/${{ github.event.repository.full_name }}/my-app/${{ env.SHORT_SHA }}"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
