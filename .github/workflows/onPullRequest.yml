@@ -6,6 +6,7 @@ jobs:
   static-code-analysis:
     name: lint
     runs-on: ubuntu-latest
+    if: ${{ false }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
