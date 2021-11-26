@@ -2,19 +2,19 @@
 
 An exercise for 'DevOps and SRE' on HTW Berlin
 
-## Test
+## Execute Tests
 
 ```bash
 go test ./...
 ```
 
-## Build
+## Build the Container
 
 ```bash
 docker build . -t my-app
 ```
 
-## Run
+## Run the Container
 
 ```bash
 docker run -p 8080:8080 my-app
